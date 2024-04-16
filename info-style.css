@@ -1,0 +1,10 @@
+/* Top Container ctrl / */
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        'showcase showcase';
+    grid-template-columns: repeat(auto-fit);
+    align-items: start;
+    padding: 4rem 12rem;
+}

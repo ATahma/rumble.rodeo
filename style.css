@@ -4,7 +4,7 @@
     --primary:  #a6ff7b;
     --dark: #190059;
     --light: #ff54ff;
-    --seconday: 
+    --seconday: #ff6737;
 }
 
 @font-face {
@@ -156,3 +156,46 @@ footer {
         grid-template-columns: 2fr;
     }
 }
+
+.a {
+    border-bottom: 1px solid var(--seconday);
+    color: var(--seconday);
+    padding-bottom: .1em;
+    text-decoration: none;
+  }
+  
+a:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff6737' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 1rem;
+    border-bottom: 0;
+    padding-bottom: .1em;
+    text-decoration: none;
+  }
+
+.box.btn:hover {
+    position: relative; /* Required for absolute positioning */
+  }
+  
+  .box.btn::after {
+    content: "mew mew mew mew mew mew"; /* Initial text */
+    position: absolute;
+    opacity: 0; /* Initially hidden */
+    animation: slideText 2s linear infinite; /* Adjust speed as needed */
+  }
+  
+  @keyframes slideText {
+    0% {
+      left: -2rem; /* Start off-screen left */
+      opacity: 0;
+    }
+    50% {
+      opacity: 1; /* Fade in */
+    }
+    100% {
+      left: 8rem; /* End off-screen right */
+      opacity: 0;
+    }
+  }
+  
+  
