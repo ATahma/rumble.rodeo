@@ -1,5 +1,5 @@
 # rumble.rodeo
-Rumble Event Website
+rumble.rodeo Website - pure HTML/CSS
 
 TODO: 
 v0.1:
