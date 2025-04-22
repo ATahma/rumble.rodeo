@@ -1,10 +1,10 @@
 /* CSS Variables */
 
 :root {
-    --primary:  #a6ff7b;
-    --dark: #190059;
-    --light: #ff54ff;
-    --seconday: #ff6737;
+    --primary:  #000000;
+    --dark: #ffffff;
+    --light: #7a7575;
+    --seconday: #240404;
 }
 
 @font-face {
@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    background: #190059;
+    background: #ffffff;
     margin: 0.2rem 0.2rem;
     line-height: 1;
 }
@@ -111,7 +111,7 @@ img {
 }
 
 .showcase a {
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
     color: var(--light);
     font-weight: bold;
 }
@@ -179,7 +179,7 @@ a:hover {
   }
   
   .box.btn:hover::after {
-    content: "mew mew mew mew mew mew"; /* Initial text */
+    content: "meoww meow meow"; /* Initial text */
     position: absolute;
     opacity: 0; /* Initially hidden */
     animation: slideText 2s linear infinite; /* Adjust speed as needed */
@@ -199,8 +199,11 @@ a:hover {
     }
 
   }
-
-
   
+  a:link {
+    text-decoration: none;
+  }
   
-  
+  a:visited {
+    text-decoration: none;
+  }
