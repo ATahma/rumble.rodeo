@@ -12,6 +12,12 @@
     src: url("fonts/jersey.ttf");
 }
 
+@font-face {
+    font-family: "kumarone";
+    src: url("fonts/kumarone.ttf");
+}
+
+
 html {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -92,6 +98,7 @@ img {
 .showcase h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
+    align-self: center;
 }
 
 .showcase p {
@@ -111,7 +118,8 @@ img {
 }
 
 .showcase a {
-    margin-top: 1.5rem;
+    font-family: kumarone;
+    margin-top: 0.2rem;
     color: var(--light);
     font-weight: bold;
 }
@@ -179,10 +187,10 @@ a:hover {
   }
   
   .box.btn:hover::after {
-    content: "meoww meow meow"; /* Initial text */
+    content: "meow meow meow meow"; /* Initial text */
     position: absolute;
     opacity: 0; /* Initially hidden */
-    animation: slideText 2s linear infinite; /* Adjust speed as needed */
+    animation: slideText 2.2s linear infinite; /* Adjust speed as needed */
   }
   
   @keyframes slideText {
@@ -207,3 +215,7 @@ a:hover {
   a:visited {
     text-decoration: none;
   }
+
+p {
+    text-align: center;
+}
